@@ -1,0 +1,180 @@
+@import url("../font/Righteous-Regular.woff");
+@font-face {
+  src: url("../font/Righteous-Regular.woff");
+  font-family: "Righteous";
+}
+#tra {
+  font-family: "Righteous", cursive;
+}
+#tra a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+header .header-center {
+  text-align: center;
+  height: 90px;
+}
+header .header-center h1 {
+  text-align: left;
+  margin: 20px 40px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 90px;
+  color: #fff;
+}
+header .header-center h1 a {
+  font-family: "Righteous";
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+main .videomom {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .videomom video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .center {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: #fff;
+}
+main .center .text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+main .center .text h2 {
+  transform: translateY(30%);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+  font-size: 72px;
+}
+main .center .text .text-sub p {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+  margin: 0 auto;
+  font-size: 40px;
+  margin-top: 8px;
+}
+main .center .text .text-sub p:nth-child(1)::after {
+  content: "";
+  margin-top: 3px;
+  display: block;
+  width: 100%;
+}
+main .center .text.active h2 {
+  transform: translateY(0%);
+  opacity: 1;
+}
+main .center .text.active .text-sub p {
+  transform: translateY(-20%);
+  opacity: 1;
+}
+main .swi {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+main .swi .swiper {
+  width: 100%;
+  height: 100%;
+}
+main .swi .swiper .swiper-wrapper .swiper-slide {
+  height: 320px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  filter: grayscale(80%);
+  align-items: flex-end;
+  top: 63%;
+}
+main .swi .swiper .swiper-wrapper .swiper-slide .swiper-inner {
+  display: inline-block;
+  width: 90%;
+  height: 320px;
+  padding: 10px;
+  border-radius: 110px;
+  background-image: linear-gradient(to bottom, #fafafa, #e1e1e1);
+}
+main .swi .swiper .swiper-wrapper .swiper-slide .country {
+  width: 99%;
+  height: 99%;
+  border: 7px solid transparent;
+  border-radius: 100px;
+  background-size: cover;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+main .swi .swiper .swiper-wrapper .swiper-slide .country01 {
+  background-image: url("../img/BRA/brazil.jpg"), linear-gradient(to top, #f1f1f1, #ddd);
+}
+main .swi .swiper .swiper-wrapper .swiper-slide .country02 {
+  background-image: url("../img/TUR/turtur.jpg"), linear-gradient(to top, #f1f1f1, #ddd);
+}
+main .swi .swiper .swiper-wrapper .swiper-slide .country03 {
+  background-image: url("../img/CHE/swiss.jpg"), linear-gradient(to top, #f1f1f1, #ddd);
+}
+main .swi .swiper .swiper-wrapper .swiper-slide .country04 {
+  background-image: url("../img/VNM/vietnam.jpg"), linear-gradient(to top, #f1f1f1, #ddd);
+}
+main .swi .swiper .swiper-wrapper .swiper-slide .country05 {
+  background-image: url("../img/CAN/canadatwo.jpg"), linear-gradient(to top, #f1f1f1, #ddd);
+}
+main .swi .swiper .swiper-wrapper .swiper-slide .country06 {
+  background-image: url("../img/ISL/islandtwo.jpg"), linear-gradient(to top, #f1f1f1, #ddd);
+}
+main .swi .swiper .swiper-wrapper .swiper-slide .country07 {
+  background-image: url("../img/ITA/italia.jpg"), linear-gradient(to top, #f1f1f1, #ddd);
+}
+main .swi .swiper .swiper-wrapper .swiper-slide-active {
+  filter: none;
+}
+main .next,
+main .prev {
+  width: 5%;
+  color: #fff;
+}
+main .glass-wrapper {
+  width: 220px;
+  height: 320px;
+  padding: 10px;
+  border-radius: 110px;
+  background-image: linear-gradient(to bottom, #fefefe, #ddd);
+}
+main .glass-wrapper .glass {
+  width: 200px;
+  height: 300px;
+  border: 7px solid transparent;
+  border-radius: 100px;
+  background-image: url("../img/BRA/brazil_place_02.jpg"), linear-gradient(to top, #fff, #ddd);
+  background-size: cover;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}/*# sourceMappingURL=main.css.map */

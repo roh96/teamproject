@@ -1,0 +1,191 @@
+@import url('../font/Righteous-Regular.woff');
+
+@font-face{
+  src:url("../font/Righteous-Regular.woff");
+  font-family : "Righteous";
+ }
+#tra {
+  font-family: "Righteous", cursive;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  .header-center {
+    text-align: center;
+    height: 90px;
+    h1 {
+      text-align: left;
+      margin: 20px 40px;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 90px;
+      color: #fff;
+      a{
+        font-family : "Righteous";
+      }
+    }
+  }
+}
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow:hidden;
+  .videomom{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    video{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    color: #fff;
+    .text {
+      user-select: none;
+      h2 {
+        transform: translateY(30%);
+        opacity: 0;
+        transition: opacity 1s, transform 1s;
+        font-size: 72px;
+        &:nth-child(1) {
+        }
+      }
+      .text-sub {
+        p {
+          transform: translateY(100%);
+          opacity: 0;
+          transition: opacity 1s, transform 1s;
+          margin: 0 auto;
+          font-size: 40px;
+          margin-top: 8px;
+          &:nth-child(1)::after {
+            content: "";
+            margin-top: 3px;
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      &.active h2 {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+      &.active .text-sub p {
+        transform: translateY(-20%);
+        opacity: 1;
+      }
+    }
+  }
+  .swi {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .swiper {
+      width: 100%;
+      height: 100%;
+      .swiper-wrapper {
+        .swiper-slide {
+          height: 320px;
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          filter: grayscale(80%);
+          align-items: flex-end;
+          top: 63%;  //사진 위치
+          .swiper-inner {
+            display: inline-block;
+            width: 90%;
+            height: 320px;
+            padding: 10px;
+            border-radius: 110px;
+            background-image: linear-gradient(to bottom, #fafafa, #e1e1e1);
+          }
+          .country{
+            width: 99%;
+            height: 99%;
+            border: 7px solid transparent;
+            border-radius: 100px;
+            background-size: cover;
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+          }
+          .country01 {
+            background-image: url("../img/BRA/brazil.jpg"),
+              linear-gradient(to top, #f1f1f1, #ddd);
+          }
+          .country02 {
+            background-image: url("../img/TUR/turtur.jpg"),
+              linear-gradient(to top, #f1f1f1, #ddd);
+          }
+          .country03 {
+            background-image: url("../img/CHE/swiss.jpg"),
+              linear-gradient(to top, #f1f1f1, #ddd);
+          }
+          .country04 {
+            background-image: url("../img/VNM/vietnam.jpg"),
+              linear-gradient(to top, #f1f1f1, #ddd);
+          }
+          .country05 {
+            background-image: url("../img/CAN/canadatwo.jpg"),
+              linear-gradient(to top, #f1f1f1, #ddd);
+          }
+          .country06 {
+            background-image: url("../img/ISL/islandtwo.jpg"),
+              linear-gradient(to top, #f1f1f1, #ddd);
+          }
+          .country07 {
+            background-image: url("../img/ITA/italia.jpg"),
+              linear-gradient(to top, #f1f1f1, #ddd);
+          }
+        }
+        & .swiper-slide-active {
+          filter: none;
+        }
+      }
+    }
+  }
+
+  .next,
+  .prev {
+    width: 5%;
+    color: #fff;
+  }
+
+  .glass-wrapper {
+    width: 220px;
+    height: 320px;
+    padding: 10px;
+    border-radius: 110px;
+    background-image: linear-gradient(to bottom, #fefefe, #ddd);
+    .glass {
+      width: 200px;
+      height: 300px;
+      border: 7px solid transparent;
+      border-radius: 100px;
+      background-image: url("../img/BRA/brazil_place_02.jpg"),
+        linear-gradient(to top, #fff, #ddd);
+      background-size: cover;
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+  }
+}

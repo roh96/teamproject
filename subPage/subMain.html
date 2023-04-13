@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travello</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="./css/subMain.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <link rel="stylesheet" href="../css/detail.css" />
+    <link rel="stylesheet" href="../css/slider3d.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTh5zLUEcLPZwMmQEKwFxtL6z-Qlpn17Q&callback=initMap&region=kr"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type='text/javascript' src='../js/jquery.mousewheel.min.js'></script>
+    <script src="../js/detail.js"></script>
+    <script defer src="./js/subMain.js"></script>
+    <script defer src="../js/slider.js"></script>
+  </head>
+  <body>
+    <div class="popup none">
+    </div>
+    <div class="hide-menu">
+      <div class="header-center">
+        <h1 id="tra"><a href="../">Travello</a></h1>
+      </div>
+      <div class="hide-menu-wrapper">
+        <div class="hide-menu-icon">
+          <img src="../svg/flight_land.svg" />
+        </div>
+        <ul class="menu hidden">
+          <li class="menu-sub">
+            <a href="#">나라1</a>
+          </li>
+          <li class="menu-sub">
+            <a href="#">나라2</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right-nav-bar">
+        <ul>
+            <li><a id="nav-btn1" class="right-nav active">명소</a></li>
+            <li><a id="nav-btn2" class="right-nav">음식점</a></li>
+            <li><a id="nav-btn3" class="right-nav">숙박</a></li>
+        </ul>
+    </div>
+    <div class="go-top-btn">
+      <a href="#"
+        ><img src="../svg/play_arrow.svg" style="transform: rotate(-90deg)"
+      /></a>
+    </div>
+    <div class="section01 swiper mySwiper">
+      <div class="section01-slide swiper-wrapper">
+        <div class="section01-contain swiper-slide">
+          <div class="section01"></div>
+        </div>
+        <div class="section01-contain swiper-slide">
+          <div class="text"></div>
+        </div>
+        <div class="section01-contain swiper-slide">
+          <div class="text"></div>
+        </div>
+      </div>
+      <div class="swiper-button-next right"></div>
+      <div class="swiper-button-prev point left"></div>
+    </div>
+
+    <div class="section02" id="section02">
+      <div class="section02-contain observer"></div>
+    </div>
+
+    <div class="section03" id="section03">
+      <div class="observer">
+        <h2>여기는 "<span class="point-color">장소이름</span>" 입니다.</h2>
+      </div>
+      <div class="section03-content-btn observer">
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="section03-contain observer">
+        <!-- add section3 -->
+          <div class="sidebar">
+            <p class="text">사진 내용 넣을자리</p>
+          </div>
+          <!-- swiper area -->
+          <div class="container">
+            <div class="main-slide">
+              <!-- <div
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1607028649031-706e24b02865?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80');
+                "
+              ></div>
+              <div
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1598111215569-694e8840cbab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2564&q=80');
+                "
+              ></div>
+              <div
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1636249809812-10b728d20cef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2454&q=80');
+                "
+              ></div>
+              <div
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1648856048602-51e3d55aa1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2133&q=80');
+                "
+              ></div> -->
+            </div>
+            <div class="controls">
+              <button class="down-button">
+                <i class="fas fa-arrow-down"></i>
+              </button>
+              <button class="up-button">
+                <i class="fas fa-arrow-up"></i>
+              </button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="section04" id="section04">
+      <div class="section04-contain">
+        <div class="section04-text observer"></div>
+        <div class="section04-line observer">
+          <div class="line"></div>
+          <div>
+            <div class="section04-number">
+              <p>1</p>
+            </div>
+            <div class="section04-number">
+              <p>2</p>
+            </div>
+            <div class="section04-number">
+              <p>3</p>
+            </div>
+          </div>
+        </div>
+        <div class="section04-box observer">
+          <div>
+            <div class="section04-img"></div>
+            <div class="section04-info"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
