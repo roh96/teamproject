@@ -1,4 +1,10 @@
 @media screen and (max-width: 1258px) {
+  .block figure {
+    width: 80vw;
+  }
+  .block figure img {
+    width: 62vw;
+  }
   .section02 .section02-contain {
     display: block;
   }
@@ -21,6 +27,12 @@
   }
 }
 @media screen and (max-width: 898px) {
+  body .block figure {
+    width: 80vw;
+  }
+  body .block figure img {
+    width: 62vw;
+  }
   body .section02 .section02-contain {
     display: block;
   }
@@ -34,5 +46,41 @@
   }
   body .section02 .section02-contain .text .more {
     text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .block figure {
+    width: 80vw;
+  }
+  body .block figure img {
+    width: 62vw;
+  }
+  body .section02 .section02-contain {
+    display: block;
+  }
+  body .section02 .section02-contain .text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .section02 .section02-contain .text .title {
+    margin: 40px auto;
+    text-align: center;
+  }
+  body .section02 .section02-contain .text .more {
+    text-align: center;
+  }
+  body .section03 .section03-contain .sidebar {
+    width: 100%;
+    left: 0%;
+    margin-top: 40rem;
+  }
+  body .section03 .section03-contain .container {
+    width: 100%;
+  }
+  body .section04 {
+    padding: 40% 5% 0;
+  }
+  body .section04 .section04-contain .section04-text h2 {
+    font-size: 2.25rem;
   }
 }/*# sourceMappingURL=media.css.map */

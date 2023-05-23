@@ -322,19 +322,7 @@ body .section02 .section02-contain .text .more:hover {
 }
 
 .on {
-  -webkit-animation: 1s aaa forwards;
-          animation: 1s aaa forwards;
-}
-
-@-webkit-keyframes aaa {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  animation: 1s aaa forwards;
 }
 
 @keyframes aaa {

@@ -66,7 +66,6 @@ main .center {
 main .center .text {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 main .center .text h2 {
@@ -107,7 +106,7 @@ main .swi .swiper {
   height: 100%;
 }
 main .swi .swiper .swiper-wrapper .swiper-slide {
-  height: 320px;
+  height: 29.6%;
   font-size: 18px;
   display: flex;
   justify-content: center;
