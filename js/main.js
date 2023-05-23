@@ -26,11 +26,6 @@ for (let i of $slides) {
     swiper.autoplay.start();
   });
 }
-// 기본값 0
-window.onload = () => {
-  localStorage.setItem('num', 0)
-}
-
 const visualMain = document.querySelector("main");
 const txtMain = document.querySelector(".center .text h2");
 const txtMain2 = document.querySelector(".center .text .text-sub p");
@@ -38,9 +33,10 @@ const txtM = document.querySelector(".center .text");
 let iddx = 0;
 //스위퍼
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 6,
+  slidesPerView: 3,
   spaceBetween: 56,
   loop: true,
+  loopAdditionalSlides: 1,
   centeredSlides: true,
   autoplay: {
     delay: 2000,
@@ -65,25 +61,25 @@ const swiper = new Swiper(".mySwiper", {
   },
   breakpoints: {
     1920: {
-      slidesPerView: 6,
+      slidesPerView: 3,
       spaceBetween: 56,
     },
-    1600: {
-      slidesPerView: 6,
-      spaceBetween: 40,
-    },
-    1400: {
-      slidesPerView: 5,
-      spaceBetween: 45,
-    },
-    1280: {
-      slidesPerView: 5,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 60,
-    },
+    // 1600: {
+    //   slidesPerView: 6,
+    //   spaceBetween: 40,
+    // },
+    // 1400: {
+    //   slidesPerView: 5,
+    //   spaceBetween: 45,
+    // },
+    // 1280: {
+    //   slidesPerView: 5,
+    //   spaceBetween: 40,
+    // },
+    // 1024: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 60,
+    // },
     768: {
       slidesPerView: 3,
       spaceBetween: 40,
@@ -99,8 +95,8 @@ const swiper = new Swiper(".mySwiper", {
     200: {
       slidesPerView: 1,
       spaceBetween: 40,
-    }
-  }
+    },
+  },
 });
 //오버 시 슬라이드
 let slides, slides1;
@@ -124,20 +120,20 @@ swiper.navigation.nextEl.addEventListener("mouseout", () => {
   clearInterval(slides);
 });
 
-const contry = document.querySelectorAll('.swiper-slide');
+const contry = document.querySelectorAll(".swiper-slide");
 const test = [
-  'brazil',
-  'canada',
-  'switzerland',
-  'italy',
-  'mongolia',
-  'turkey',
-  'vietnam'
-]
+  "brazil",
+  "canada",
+  "switzerland",
+  "italy",
+  "mongolia",
+  "turkey",
+  "vietnam",
+];
 
-contry.forEach(function(btn, key){
-  btn.onclick = function(e) {
+contry.forEach(function (btn, key) {
+  btn.onclick = function (e) {
     // e.preventDefault();
-    localStorage.setItem('num', this.dataset.swiperSlideIndex)
-  }
+    localStorage.setItem("num", this.dataset.swiperSlideIndex);
+  };
 });

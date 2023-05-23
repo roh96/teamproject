@@ -38,10 +38,12 @@ function changeSlide(direction) {
   const width = mainSlide.clientWidth;
   // 3=>5개 개수 변경시 count 다시 체크해주는 역할
   slidesCount = mainSlide.querySelectorAll("div").length;
-  mainSlide.style.transform = `translateX(-${activeSlideIndex * width/slidesCount}px)`;
+  mainSlide.style.transform = `translateX(-${
+    (activeSlideIndex * width) / slidesCount
+  }px)`;
 }
 
 setInterval(() => {
-// mainSlide.style.transform = translateY(-${activeSlideIndex * height}px);
-  changeSlide('up');
-},3000);
+  // mainSlide.style.transform = translateY(-${activeSlideIndex * height}px);
+  changeSlide("up");
+}, 3000);
